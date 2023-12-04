@@ -1,0 +1,631 @@
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  serif 'Times New Roman', Times,;
+    background-color: #B0A695;
+}
+
+/* ------------------General code start here---------- */
+.section {
+    padding: 80px 0;
+    } 
+
+.section h1 {
+    font-size: 1.2rem;
+    border-bottom: 3px solid black;
+    display: inline-block;
+}
+
+@media (min-width: 768px) { 
+    .section h1 {
+        font-size: 2rem;
+        border-bottom: 3px solid black;
+        display: inline-block;
+    }
+    
+}
+
+/* ------------------General code end here---------- */
+
+
+/* -------------------back to the top button start here----------- */
+.backtop {
+    position:fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 999;
+}
+
+.backtop a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------back to the top button stop here------------------------ */
+
+
+/* ----------------------Navbar section start here------------------ */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+   
+}
+
+.navbar.background{
+    background-color: black;
+}
+
+.container-fluid> a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+}
+
+.telephone {
+    color: white;
+}
+.telephone:hover {
+    color: red;
+}
+
+@media (min-width: 478px) { 
+    .container-fluid> a {
+        color: black;
+    }
+    
+    .navbar-nav li a {
+        color: black;
+        font-weight: 600;
+    }
+
+    .navbar-nav li a:hover {
+        color: white;
+    }
+    
+    .telephone {
+        color: black;
+    }
+}
+
+/* ----------------------Navbar section end here---------------- */
+
+
+/* ----------------------Hero section start here---------------- */
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 40s ease-in-out infinite;
+}
+
+
+
+ .hero-sectiontext .text {
+    position: absolute;
+    color: black;
+    z-index: 2;
+    top: 20%;
+}
+
+.hero-sectiontext .text h1 {
+    font-size: 2rem;
+    margin-bottom: .3rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+
+.hero-sectiontext .text h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 85%;
+    border-bottom: 2px solid transparent;
+    padding: 5px;
+    font-family: 'Fasthand', cursive;
+}
+
+.video ul li{
+    position: absolute;
+    list-style: none;
+    
+}
+
+.video ul li:nth-child(1){
+    right: 15%;
+    bottom: 25%; 
+}
+
+
+.video ul li:nth-child(2){
+   left: 15%;
+   bottom: 0%; 
+}
+.video ul li:nth-child(1) video, .video ul li:nth-child(2) video{
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+    width:100px;
+    height:100px;
+}
+
+.video ul li:nth-child(3) {
+    left: 15%;
+    bottom: 25%; 
+ }
+
+
+.video ul li:nth-child(4) {
+    right:15%;
+   bottom: 0%; 
+ }
+
+ .video ul li:nth-child(3) img, .video ul li:nth-child(4) img{
+    height: 100px;
+    width: 100px; 
+    object-fit: cover;
+    border-radius: 10px !important;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+ }
+
+.elemental-widget ul li{
+position: absolute;
+list-style: none;
+}   
+
+.elemental-widget ul li:first-child {
+height: auto;
+width: auto;
+right: 5%;
+top: 30%;
+z-index: -1;
+}  
+
+.elemental-widget ul li:last-child {
+height: auto;
+width: auto;
+left: 10%;
+top: 20%;
+}   
+
+
+.hero-sectiontext .position {
+    color: white;
+    z-index: 2;
+}
+
+.position {
+    z-index: 999;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+
+.position a {
+    text-decoration: none;
+    display: inline-block;
+    width: 20px;
+    color: black;
+}
+
+.circle{
+    content: "";
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 4px 3px 6px rgba(31, 34, 36, 0.5);
+}
+
+
+@media (min-width: 426px) { 
+    .hero-sectiontext .text {
+        position: absolute;
+        color: black;
+        z-index: 2;
+        top: 20%;
+        left: 15%;
+        width: 40%;
+    }
+    
+    .hero-sectiontext .text h1 {
+        font-size: 3rem;
+        margin-bottom: .3rem;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+    }
+    
+    
+    .hero-sectiontext .text h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        width: 85%;
+        border-bottom: 2px solid black;
+        padding: 5px;
+        font-family: 'Fasthand', cursive;
+    }
+    
+    .video ul li{
+        position: absolute;
+        list-style: none;
+        
+    }
+    
+    .video ul li:nth-child(1){
+       right: 10%;
+       top: 15%;
+    }
+    
+    
+    .video ul li:nth-child(2){
+       right: 2%;
+       top: 60%; 
+    }
+    .video ul li:nth-child(1) video, .video ul li:nth-child(2) video{
+        object-fit: cover !important;
+        border-radius: 10px !important;
+        box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+        width:250px;
+        height:300px;
+    }
+    
+    .video ul li:nth-child(3) {
+        left: 50%;
+        top: 65%;
+     }
+    
+    
+    .video ul li:nth-child(4) {
+        right: 8%;
+        top: 65%;
+     }
+    
+     .video ul li:nth-child(3) img, .video ul li:nth-child(4) img{
+        height: 200px;
+        width: 150px; 
+        object-fit: cover;
+        border-radius: 10px !important;
+        box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+     }
+     
+     }
+    
+@media (min-width: 769px) { 
+    .hero-sectiontext .text {
+        position: absolute;
+        color: black;
+        z-index: 2;
+        top: 25%;
+        left: 15%;
+        width: 30%;
+    }
+    
+    .hero-sectiontext .text h1 {
+        font-size: 3rem;
+        margin-bottom: .3rem;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+    }
+    
+    
+    .hero-sectiontext .text h2 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        width: 85%;
+        border-bottom: 2px solid black;
+        padding: 5px;
+        font-family: 'Fasthand', cursive;
+    }
+    
+    .video ul li{
+        position: absolute;
+        list-style: none;
+        
+    }
+    
+    .video ul li:nth-child(1){
+       right: 25%;
+       top: 15%;
+    }
+    
+    
+    .video ul li:nth-child(2){
+       right: 2%;
+       top: 60%; 
+    }
+    .video ul li:nth-child(1) video, .video ul li:nth-child(2) video{
+        object-fit: cover !important;
+        border-radius: 10px !important;
+        box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+        width:350px;
+        height:300px;
+    }
+    
+    .video ul li:nth-child(3) {
+        left: 47%;
+        top: 70%;
+     }
+    
+    
+    .video ul li:nth-child(4) {
+        right: 10%;
+        top: 20%;
+     }
+    
+     .video ul li:nth-child(3) img{
+        height: 250px;
+        width: 180px; 
+        object-fit: cover;
+        border-radius: 10px !important;
+        box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+     }
+    
+     .video ul li:nth-child(4) img{
+        height: 350px;
+        width: 150px; 
+        object-fit: cover;
+        border-radius: 10px !important;
+        box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.427);
+     }
+
+}
+
+/* -----------------Hero section end here ------------------------------------ */
+
+
+
+/* -----------------feature products section start here------------------------- */
+
+ 
+.section .content-image {
+     width: 200px;
+     height: 200px;
+   }
+.section .content-image img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+  
+
+.section .card {
+     background: linear-gradient(-100deg,rgb(212, 212, 212) 60%,#ffffff 50%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+
+.bg {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    background-image:linear-gradient( rgba(245, 246, 252, 0.52), rgb(49, 1, 37)),url('/image/1.jpg');
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+
+.section .content a{
+    text-decoration: none;
+    color: black;
+}
+.section .content a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.section .write h2 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: rgb(0, 255, 255);
+    letter-spacing: .4px;
+}
+
+
+
+/* -----------------feature products section end here------------------------- */
+
+
+
+/* -----------------About us section start here----------------------- */
+
+
+
+.section .item1 {
+    position: relative;
+    top: 20%;
+}
+
+.section .item2 {
+    width: 100%;
+  }
+.section .item2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+.section .content-image img {
+    width: 100%;
+    height: 100%;
+  }
+/* ----------------- section end here------------------------- */
+
+
+
+/* ----------------Baking delight section start here--------------- */
+
+
+  .set3 {
+    margin-top: 30px;
+  }
+
+  .section .set3 h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+   }
+ 
+
+.section .item img {
+    width: 100%;
+    height: 300px;
+  }
+
+.section .btn-sides {
+    display: flex;
+    flex-direction: column;
+}
+/* -----------------Baking delight section start here------------------------- */
+
+
+  /* -----------------Testimonies section start here------------------*/
+
+  .behind {
+    background: linear-gradient(-100deg,white 50%,#f5f3f4 50%);
+ }
+ 
+
+.swiper {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 5%;
+ 
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+ .section .image-box {
+    z-index: 999;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+   
+}
+ 
+ .section .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   display: block;
+    border-radius: 50%;
+ }
+
+
+ .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto;
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+ 
+ .section .overview {
+   font-style: italic;
+ }
+ 
+ .section  .overview b {
+    text-transform: uppercase;
+    color: yellow;
+ }
+ 
+ .testimonial {
+    margin: 50px;
+ }
+
+/* -----------------Testimony section end here------------------------- */
+ 
+
+
+ /* ------------custom booking start here------------- */
+
+.section .background {
+position: relative;
+top: 15%;
+}
+
+.section .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    padding: 15px;
+}
+.form-control {
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    padding:1rem;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid black;
+}
+.form-control:focus + label {
+   color: blue;
+}
+.form-control:focus + label {
+  padding-left: 0;
+  transition: all .5s;
+}
+
+.not {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+}
+.not:focus {
+    box-shadow: none;
+}
+
+
+/* -----------------Custome booking section end here------------------------- */
+

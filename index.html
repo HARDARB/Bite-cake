@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bite cake</title>
+
+
+   <!------------------Linked stylesheets and vendor start here------------------------------------------>
+
+  <script src="https://kit.fontawesome.com/be1343aed1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+ <!------------------ Linked stylesheed and vendor end here------------------------------------------>
+
+
+</head>
+
+<body>
+
+
+<!------------------ Back to top button start here------------------------------------------>
+  <div class="backtop"><a class="" href="#logo"><i class='bx bxs-up-arrow bx-fade-up bx-md'></i></a></div>
+<!------------------ Back to top button end here-------------------------------------------->
+
+
+<!------------------ Navbar start here----------------------------------------------------->
+
+  <nav class="navbar navbar-expand-lg" id="logo">
+    <div class="container-fluid from-top">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-cake-candles fw-2"></i><span class="ml-2">Bit
+          Cake</span></a>
+      <button onclick="toggleClass()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span style="color: white;"><i class="fa-solid fa-bars fa-1x"></i></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+        <ul class="navbar-nav justify-content-lg-center col-10 ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fproducts">BAKING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#special">SPECIAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonies">TESTIMONIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#customize">CUSTOMIZE</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="">
+        <a href="tel:+234%9032" class="telephone">
+          <span><i class="fa-solid fa-phone "></i></span>+234 567 78990
+        </a>
+      </div>
+    </div>
+  </nav>
+<!------------------ Navbar section ends here------------------------------------------------>
+
+
+  <!------------------ Social media links start here------------------------------------------>
+
+  <div class="overlay d-none d-lg-block">
+    <div class="position d-flex text-center position-fixed">
+      <div class="circle mb-3 bx-tada-hover"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+      <div class="circle mb-3 bx-tada-hover"><a href="#"><i class="fa-brands fa-square-twitter"></i></a></div>
+      <div class="circle mb-3 bx-tada-hover"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+      <div class="circle bx-tada-hover"><a href=""><i class="fa-brands fa-square-whatsapp "></i></a></div>
+    </div>
+  </div>
+<!------------------ Social media links end here------------------------------------------>
+
+
+<!------------------ Hero section start here---------------------------------------------->
+
+  <div class="hero-section container" id="home">
+    <div class="video">
+      <ul>
+        <li>
+          <video autoplay muted loop class="from-right">
+            <source src="image/Video/Pinterest.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </li>
+        <li>
+          <video autoplay muted loop class="from-left">
+            <source src="image/Video/Pinterest1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </li>
+        <li><img src="image/hero-ig3.jpg" class="stagger" alt="bite cake hero image"></li>
+        <li><img src="image/hero-img2.jpg" alt="bite cake hero image" class="stagger"></li>
+      </ul>
+    </div>
+
+    <div class="hero-sectiontext ">
+      <div class="text from-top">
+        <h1>Taste the cake, Bite the cake.</h1>
+        <h2>Our utmost priority is to build taste that suite your events.</h2>
+      </div>
+    </div>
+    <div class="elemental-widget">
+      <ul>
+        <li><img src="image/elementa-widget/dots.png" alt="bite cake hero widget"></li>
+        <li><img src="image/elementa-widget/pointer.png" alt="bite cake hero widget"></li>
+      </ul>
+    </div>
+  </div>
+<!------------------ Hero section end here------------------------------------------------------->
+
+
+<!------------------ Feature products section start here------------------------------------------>
+
+  <div class=" mt-5 container section" id="fproducts">
+    <div class="text-center d-flex justify-content-center mb-3 hidden">
+      <h1>FEATURE PRODUCTS</h1>
+    </div>
+
+    <div class="row d-flex justify-content-center from-bottom">
+      <div class="col-8">
+        <div class="row">
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic10.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text1">
+                      <p>Soft-spice</p>
+                    </div>
+                  </div>
+                  <div class="content-details fadeIn-bottom">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic2.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text2">
+                      <p>spice</p>
+                    </div>
+                  </div>
+                  <div class="content-details bx-tada-hover fadeIn-left">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover  hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic3.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text1">
+                      <p>Warm-spice</p>
+                    </div>
+                  </div>
+                  <div class="content-details fadeIn-bottom">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic11.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text1">
+                      <p>Sprinke</p>
+                    </div>
+                  </div>
+                  <div class="content-details fadeIn-bottom">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic9.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text2">
+                      <p>Taste Nice</p>
+                    </div>
+                  </div>
+                  <div class="content-details fadeIn-left">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 col-lg-4 col-md-6 bx-tada-hover hidden">
+            <div class="card">
+              <div class="content">
+                <a href="#" target="_blank">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="image/pic8.png" alt="Bite cake feature product image">
+                  <div class="card-body">
+                    <div class="card-text1">
+                      <p>Soft sprinkle</p>
+                    </div>
+                  </div>
+                  <div class="content-details fadeIn-bottom">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+<!------------------ Feature products section end here------------------------------------------>
+
+
+
+
+<!------------------ About us section start here------------------------------------------------>
+
+  <div class="section container" id="aboutus">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="row">
+          <div class="col-lg-6 from-left">
+            <div class="item1">
+              <h1>About Us</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nam aperiam iure ipsum
+                reprehenderit
+                sit, placeat quia accusantium unde, itaque sapiente explicabo, quaerat quae facere?</p>
+              <button type="button" class="btn btn-dark  btn-sm ">click here</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 from-right">
+            <div class="item2 mt-5 mt-lg-0">
+              <img
+                src="image/aboutus--image.png"
+                alt="Bite cake about us image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------------ About us section end here-------------------------------------------------->
+
+
+
+<!------------------ Baking delight section start here------------------------------------------>
+  <div class="section" id="special">
+    <section class="d-flex justify-content-center mb-3">
+      <h1>BAKING DELIGHT</h1>
+    </section>
+
+    <div class="container">
+      <div class="row mt-lg-5 mt-md-5 mt-3 d-flex justify-content-center">
+        <div class="col-lg-10">
+          <div class="row ">
+            <div class="col-lg-3 from-left">
+              <span class="btn-sides">
+                <button type="button" class="btn btn-dark btn-sm ">Chocolate</button>
+                <button type="button" class="btn btn-dark mt-3 btn-sm ">Candy</button>
+                <button type="button" class="btn btn-dark mt-3  btn-sm ">Party</button>
+                <button type="button" class="btn btn-dark mt-3 btn-sm ">Wedding</button>
+              </span>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 from-bottom">
+              <div class="item">
+                <img class="content-image" src="image/11.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 from-bottom">
+              <div class="item">
+                <img class="content-image" src="image/7.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 from-bottom">
+              <div class="item ">
+                <img class="content-image" src="image/4.5.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col-lg-3 col-md-6 from-bottom">
+              <div class="item ">
+                <img class="content-image" src="image/12.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 from-bottom">
+              <div class="item">
+                <img class="content-image" src="image/14@3x.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 from-bottom">
+              <div class="item ">
+                <img class="content-image" src="image/13.jpg" alt="BITE CAKE baking delight image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------------ Baking delight end here------------------------------------------------->
+
+
+<!------------------ Testimonies section start here------------------------------------------>
+
+  <div class=" section behind from-bottom " id="testimonies">
+    <div class="section5-text text-center d-flex justify-content-center ">
+      <h1>Testimonies</h1>
+    </div>
+    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden mt-5">
+      <div class="swiper-wrapper" id="swiper-wrapper-3e19810c67bf85666" aria-live="polite">
+        <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="width: 700px;">
+
+          <div class="image-box mt-5"><img src="image/rev.jpg" alt="..."></div>
+          <p class="testimonial mt-3">Sweet cake with delicious taste consectetur adipisicing elit.
+            modi repellendus pariatur odio explicabo voluptatem
+            <span class="overview"><b>Johaade-Paul </b>,officer worker</span>
+          </p>
+
+        </div>
+        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 612px;">
+          <div class="image-box mt-5"><img src="image/rev3.jpg" alt="..."></div>
+
+          <p class="testimonial mt-3">The wedding cake is cool but it need to be improved amet consectetur adipisicing elit.
+            Similique ut
+            <span class="overview"><b>Johaade-Paul </b>,officer worker</span>
+          </p>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 612px;">
+          <div class="image-box mt-5"><img src="image/rev2.jpg" alt="..."></div>
+          <p class="testimonial mt-3">My wedding was bollosom  with the cake adipisicing elit.
+            Similique
+            quisquam
+            iste excepturi fugit sit ipsam aliquam saepe voluptates.
+            atque?
+            <span class="overview"><b>Johaade-Paul </b>,officer worker</span>
+        </div>
+        <div class="swiper-slide" role="group" aria-label="4 / 5" style="width: 612px; ">
+          <div class="image-box mt-5"><img src="image/rev31.jpg" alt="..."></div>
+
+          <p class="testimonial mt-3">Great cake with nice taste adipisicing elit.
+            Similique
+            quisquam
+            iste excepturi fugit sit ipsam aliquam saepe voluptates.
+            atque?
+            <span class="overview"><b>Johaade-Paul </b>,officer worker</span>
+        </div>
+      </div>
+      <div class="swiper-slide" role="group" aria-label="5 / 5" style="width: 612px;">
+        <div class="image-box"><img src="image/rev.jpg" alt="..."></div>
+
+        <p class="testimonial">it was great buying from you consectetur adipisicing elit.
+          Similique
+          quisquam
+          iste excepturi fugit sit ipsam aliquam saepe voluptates.
+          atque?
+          <span class="overview"><b>Johaade-Paul </b>,officer worker</span>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+      <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet" tabindex="0"
+        role="button" aria-label="Go to slide 9"></span>
+    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  </div>
+
+<!------------------ Testimonies section end here------------------------------------------------>
+
+
+<!------------------ Custome booking section start here------------------------------------------>
+  <div class=" container section" id="customize">
+    <div class="text-center d-flex justify-content-center mb-3 mt-5 ">
+      <h1>CUSTOM BOOKING</h1>
+    </div>
+    <div class="row d-flex justify-content-center from-right">
+      <div class="col-8">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image">
+              <img src="image/pic7.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 from-left">
+            <div class="form">
+              <form action="">
+                <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+
+
+                <input type="Address" class="form-control" id="exampleFormControlInput1" placeholder="Address">
+
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+
+                <input type="file" class="form-control form-control-sm not" id="formFileMultiple" placeholder=""
+                  multiple>
+
+                <button type="submit" class="btn btn-outline-dark mt-2">Book</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!------------------ Custome booking section end here------------------------------------------>
+
+
+<!------------------ Linked javascripts-------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+    </script>
+    <!-- Gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="Index.js"></script>
+</body>
+
+</html>
